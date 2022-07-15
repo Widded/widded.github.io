@@ -120,31 +120,15 @@ nav ul li a {
     display: inline-block;
     font-weight: 600;
     background-color: #fa9600;
-    width: 160px;
     font-size: 1.2em;
-    padding: .7rem 0;
+    padding: 1rem 2rem;
     color: #fff;
     transition: .3s;
+    border-radius: 8px;
 }
 
-#home .more a:nth-child(1) {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-#home .more a:nth-child(2) {
-    color: #fff;
-    background-color: #222;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-#home .more a:nth-child(1):hover {
+#home .more a:hover {
     background-color: rgb(182, 119, 25);
-}
-
-#home .more a:nth-child(2):hover {
-    background-color: rgb(0, 0, 0);
 }
 
 .refBg {
