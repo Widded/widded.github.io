@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 10px;
+}
+
+img {
+    pointer-events: none;
+    user-select: none;
+}
+
+body {
+    background: #FBFAFF;
+}
+
+nav {
+    padding: 1rem 0;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav #logo svg {
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0 20px;
+}
+
+nav ul li a {
+    color: #51586a;
+    font-size: 1em;
+}
+
+#home {
+    padding: 8rem 0;
+    background-image: url(/src/img/pattern.png) no-repeat;
+}
+
+#home #loopText {
+    color: #fa9600;
+    position: relative;
+}
+
+#loopText::after {
+    content: "|";
+    margin-left: .2rem;
+    color: #000;
+    font-weight: 200;
+    animation: mouseAnimate 2s infinite;
+}
+
+@keyframes mouseAnimate {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#home .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .content {
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.3em;
+    line-height: 1.8;
+}
+
+#home .more {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#home .more a {
+    display: inline-block;
+    font-weight: 600;
+    background-color: #fa9600;
+    width: 160px;
+    font-size: 1.2em;
+    padding: .7rem 0;
+    color: #fff;
+    transition: .3s;
+}
+
+#home .more a:nth-child(1) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#home .more a:nth-child(2) {
+    color: #fff;
+    background-color: #222;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#home .more a:nth-child(1):hover {
+    background-color: rgb(182, 119, 25);
+}
+
+#home .more a:nth-child(2):hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.refBg {
+    background-color: #EBE8FD;
+    padding: 1.2rem 0;
+}
+
+#ref .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 50px;
+}
+
+#ref svg {
+    width: 75px;
+    height: auto;
+    cursor: pointer;
+}
+
+#ref path {
+    fill: #5F5F5F;
+    transition: .3s;
+}
+
+#ref .refItem:hover path.keazon-logo {
+    fill: #5B53E1;
+}
+
+#ref .refItem:hover path.widded-logo {
+    fill: #23252b;
+}
