@@ -27,137 +27,16 @@ img {
 
 body {
     background: #FBFAFF;
-}
-
-nav {
-    padding: 1rem 0;
-}
-
-nav .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav #logo svg {
-    width: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 0 20px;
-}
-
-nav ul li a {
-    color: #51586a;
-    font-size: 1em;
-}
-
-#home {
-    padding: 7.9rem 0;
-    background-image: url(/src/img/pattern.png) no-repeat;
-}
-
-#home #loopText {
-    color: #fa9600;
-    position: relative;
-}
-
-#loopText::after {
-    content: "|";
-    margin-left: .2rem;
-    color: #000;
-    font-weight: 200;
-    animation: mouseAnimate 2s infinite;
-}
-
-@keyframes mouseAnimate {
-    0% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-#home .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #222;
 }
 
-#home .content {
-    text-align: center;
-}
-
-#home h1 {
-    font-size: 3em;
-    margin-bottom: 1rem;
-}
-
-#home p {
-    font-size: 1.3em;
-    line-height: 1.8;
-}
-
-#home .more {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-}
-
-#home .more a {
-    display: inline-block;
-    font-weight: 600;
-    background-color: #fa9600;
-    font-size: 1.2em;
-    padding: 1rem 2rem;
+.soon h1 {
     color: #fff;
-    transition: .3s;
-    border-radius: 8px;
+    font-size: 2.5em;
 }
 
-#home .more a:hover {
-    background-color: rgb(182, 119, 25);
-}
-
-.refBg {
-    background-color: #EBE8FD;
-    padding: 1.2rem 0;
-}
-
-#ref .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0 50px;
-}
-
-#ref svg {
-    width: 75px;
-    height: auto;
-    cursor: pointer;
-}
-
-#ref path {
-    fill: #5F5F5F;
-    transition: .3s;
-}
-
-#ref .refItem:hover path.keazon-logo {
-    fill: #5B53E1;
-}
-
-#ref .refItem:hover path.widded-logo {
-    fill: #23252b;
-}
